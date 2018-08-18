@@ -1,0 +1,29 @@
+.search .search-wrapper {
+    background-color: #f8f8f8;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1.5em 1.5em 2em;
+}
+
+.search .search-wrapper .label {
+    color: #695e4a;
+    font-size: 1.05em;
+    font-weight: 400;
+    padding: 0;
+}
+
+.search .search-wrapper .search-box {
+    width: 50%;
+    padding: .25em;
+    display: inline-block;
+    margin: .5em 0;
+}
+
+.search .search-wrapper .btn-primary {
+    font-size: 1.05em;
+    background-color: #5ab44b;
+    color: #fff;
+    width: 20%;
+    float: right;
+    border: none;
+}

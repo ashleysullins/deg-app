@@ -1,0 +1,29 @@
+<section class="search">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="search-wrapper">
+                    <div class="label">
+                        Zip Code
+                    </div>
+                    <form action="">
+                        <input id="zipcode" name="zipcode" pattern="[0-9]+" class="search-box form-control" minlength="5" maxlength="5" [(ngModel)]="search" #zipcode="ngModel" required>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                        <div *ngIf="zipcode.invalid && (zipcode.dirty || zipcode.touched)"
+                            class="alert alert-danger">
+                          <div *ngIf="zipcode.errors.required">
+                            Zipcode is required.
+                          </div>
+                          <div *ngIf="zipcode.errors.minlength">
+                            Zipcode must be 5 numbers long.
+                          </div>
+                          <div *ngIf="zipcode.errors.pattern">
+                            Zipcode must be numbers only.
+                          </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
